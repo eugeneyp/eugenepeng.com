@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512">
   <defs>
-    <!-- A muted bronze/brass gradient for a professional, classic metallic look -->
+    <!-- A balanced 'Ice Silver' gradient that pops without being pure white -->
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#C5A880" /> <!-- Soft Bronze -->
-      <stop offset="100%" stop-color="#8C6D46" /> <!-- Deeper Brass -->
+      <stop offset="0%" stop-color="#E1F5FE" /> <!-- Crisp Ice Blue -->
+      <stop offset="100%" stop-color="#659EB9" /> <!-- Theme Primary Blue -->
     </linearGradient>
     <mask id="hub-hole">
       <rect width="100" height="100" fill="white" />
