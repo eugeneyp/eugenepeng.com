@@ -12,9 +12,9 @@
 - **Paths:** Since the site is hosted on a custom root domain, do **not** configure base paths in `astro.config.ts` or internal routing.
 
 ## Important Commands
-- Run local development server: `npm run dev`
-- Build for production: `npm run build`
-- Theme package check: `npm run pure check`
+- Run local development server: `bun run dev`
+- Build for production: `bun run build`
+- Theme package check: `bun run pure check`
 
 ## Agent Workflow Instructions
 - When adding new blog posts or projects, place them in the appropriate content collections (`src/content/`).
