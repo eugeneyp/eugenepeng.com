@@ -63,7 +63,7 @@ export const theme: ThemeUserConfig = {
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
     credits: true,
     /** Optional details about the social media accounts for this site. */
-    social: { rss: '/rss.xml' }
+    social: { rss: 'https://www.eugenepeng.com/rss.xml' }
   },
 
   // [Content]
@@ -140,27 +140,6 @@ export const integ: IntegrationUserConfig = {
     selector: '.prose .zoomable',
     options: {
       className: 'zoomable'
-    }
-  },
-  // Comment system
-  waline: {
-    enable: true,
-    // Server service link
-    server: 'https://astro-theme-pure-waline.arthals.ink/',
-    // Show meta info for comments
-    showMeta: false,
-    // Refer https://waline.js.org/en/guide/features/emoji.html
-    emoji: ['bmoji', 'weibo'],
-    // Refer https://waline.js.org/en/reference/client/props.html
-    additionalConfigs: {
-      // search: false,
-      pageview: true,
-      comment: true,
-      locale: {
-        reaction0: 'Like',
-        placeholder: 'Welcome to comment. (Email to receive replies. Login is unnecessary)'
-      },
-      imageUploader: false
     }
   }
 }
