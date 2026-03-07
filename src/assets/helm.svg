@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512">
   <defs>
-    <!-- Add a slight gradient matching your theme's #659EB9 for a premium feel -->
+    <!-- A rich, warm golden gradient to provide a striking contrast against the theme -->
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#80B3CC" />
-      <stop offset="100%" stop-color="#4B819B" />
+      <stop offset="0%" stop-color="#FCD34D" /> <!-- Lighter Amber/Gold -->
+      <stop offset="100%" stop-color="#D97706" /> <!-- Deeper Amber/Gold -->
     </linearGradient>
     <mask id="hub-hole">
       <rect width="100" height="100" fill="white" />
