@@ -24,10 +24,10 @@ import config from './src/site.config.ts'
 // https://astro.build/config
 export default defineConfig({
   // [Basic]
-  site: 'https://eugeneyp.github.io',
+  site: 'https://www.eugenepeng.com',
   // Deploy to a sub path
   // https://astro-pure.js.org/docs/setup/deployment#platform-with-base-path
-  base: '/eugenepeng.com',
+  // base: '/eugenepeng.com',
   trailingSlash: 'never',
   // root: './my-project-directory',
   server: { host: true },
