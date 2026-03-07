@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512">
+  <defs>
+    <!-- Add a slight gradient matching your theme's #659EB9 for a premium feel -->
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#80B3CC" />
+      <stop offset="100%" stop-color="#4B819B" />
+    </linearGradient>
+    <mask id="hub-hole">
+      <rect width="100" height="100" fill="white" />
+      <circle cx="50" cy="50" r="6" fill="black" />
+    </mask>
+  </defs>
+  
+  <g mask="url(#hub-hole)" fill="url(#grad)">
+    <!-- Outer Handles -->
+    <rect x="48.5" y="2" width="3" height="96" rx="1.5" />
+    <rect x="48.5" y="2" width="3" height="96" rx="1.5" transform="rotate(45 50 50)" />
+    <rect x="48.5" y="2" width="3" height="96" rx="1.5" transform="rotate(90 50 50)" />
+    <rect x="48.5" y="2" width="3" height="96" rx="1.5" transform="rotate(135 50 50)" />
+    
+    <!-- Inner Spokes (Thicker) -->
+    <rect x="46" y="10" width="8" height="80" rx="3" />
+    <rect x="46" y="10" width="8" height="80" rx="3" transform="rotate(45 50 50)" />
+    <rect x="46" y="10" width="8" height="80" rx="3" transform="rotate(90 50 50)" />
+    <rect x="46" y="10" width="8" height="80" rx="3" transform="rotate(135 50 50)" />
+
+    <!-- Rings -->
+    <circle cx="50" cy="50" r="30" fill="none" stroke="url(#grad)" stroke-width="8"/>
+    <!-- Outer rim of the ring -->
+    <circle cx="50" cy="50" r="36" fill="none" stroke="url(#grad)" stroke-width="1.5"/>
+    <!-- Inner rim of the ring -->
+    <circle cx="50" cy="50" r="24" fill="none" stroke="url(#grad)" stroke-width="1.5"/>
+    
+    <!-- Central Hub -->
+    <circle cx="50" cy="50" r="14" fill="url(#grad)" />
+  </g>
+</svg>

@@ -14,11 +14,11 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS)
 
 const imagePath = config.logo.src
 const images = import.meta.glob<{ default: ImageMetadata }>(
-  '/src/assets/*.{jpeg,jpg,png,gif,avif,webp}'
+  '/src/assets/*.{jpeg,jpg,png,gif,avif,webp,svg}'
 )
 if (!images[imagePath])
   throw new Error(
-    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,avif,webp}"`
+    `"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif,avif,webp,svg}"`
   )
 ---
 
@@ -58,7 +58,6 @@ if (!images[imagePath])
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
       <Section title='About'>
-        <p class='text-muted-foreground'>Product Manager</p>
         <p class='text-muted-foreground'>
           Hi, I am a Product Manager specializing in Industrial IoT, AI/ML, and Predictive
           Maintenance.
