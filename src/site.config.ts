@@ -26,8 +26,8 @@ export const theme: ThemeUserConfig = {
   },
   /** Set a logo image to show in the homepage. */
   logo: {
-    src: '/src/assets/logo.png',
-    alt: 'Logo'
+    src: '/src/assets/helm_2.png',
+    alt: 'Captain at the Helm'
   },
 
   titleDelimiter: '•',
