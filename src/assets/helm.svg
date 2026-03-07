@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="512" height="512">
   <defs>
-    <!-- A rich, warm golden gradient to provide a striking contrast against the theme -->
+    <!-- A muted bronze/brass gradient for a professional, classic metallic look -->
     <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FCD34D" /> <!-- Lighter Amber/Gold -->
-      <stop offset="100%" stop-color="#D97706" /> <!-- Deeper Amber/Gold -->
+      <stop offset="0%" stop-color="#C5A880" /> <!-- Soft Bronze -->
+      <stop offset="100%" stop-color="#8C6D46" /> <!-- Deeper Brass -->
     </linearGradient>
     <mask id="hub-hole">
       <rect width="100" height="100" fill="white" />
