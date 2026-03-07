@@ -58,14 +58,9 @@ const footerLink1 = footerConf.links?.filter(({ pos }) => pos === 1) || []
 
       {/* Social Brands */}
       <div class='flex items-center gap-x-4'>
-        {
-          footerConf.social &&
-            Object.entries(footerConf.social).map(([platform, { label, url }]) => (
-              <a href={url} aria-label={label}>
-                <Icon name={platform as keyof typeof footerConf.social} />
-              </a>
-            ))
-        }
+        <a href='/rss.xml' aria-label='RSS'>
+          <Icon name='rss' />
+        </a>
       </div>
     </div>
   </div>
