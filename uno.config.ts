@@ -59,6 +59,9 @@ const typographyConfig: TypographyOptions = {
       'word-break': 'break-word',
       'overflow-wrap': 'anywhere'
     },
+    'p,ul,ol,li': {
+      'line-height': '1.75'
+    },
     // Inline code
     ':not(pre) > code': {
       'white-space': 'pre-wrap',

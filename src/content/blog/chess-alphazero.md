@@ -1,8 +1,11 @@
 ---
-title: 'Building a 2000 ELO AlphaZero Chess AI for <$30'
-description: 'How I built an AlphaZero-style Chess engine that reached 2000 ELO with less than $30 and in partnership with Claude Code.'
+title: 'Building an AlphaZero Chess AI that reaches 2000 ELO'
+description: 'How I built an AlphaZero-style Chess engine that reached 2000 ELO with less than $30'
 publishDate: '2026-03-10'
-tags: ['AI', 'Chess', 'Machine Learning', 'Claude']
+heroImage:
+  src: '../../assets/blog/chess-alphazero-hero.png'
+  alt: 'AlphaZero Chess Neural Network Banner'
+tags: ['AI', 'Chess', 'Machine Learning']
 ---
 
 ## Introduction
@@ -84,7 +87,7 @@ Training a neural network costs time and money. So the trick is to find the most
 
 My lessons so far:
 1. **Verify training pipeline using the smallest model**: before you conduct a full training run, use a small model to verify that the training pipeline works on your local laptop, without having to incur GPU expenses yet. This allows you to quickly fix any training script / pipeline issues.
-2. **Optimize training speed early on using a quick run: **Use a medium or full-sized model to do a quick run on a GPU, measure the speed, then ask coding agent to optimize the speed. Experiment and repeat. This will save tons of time later. 
+2. **Optimize training speed early on using a quick run:** Use a medium or full-sized model to do a quick run on a GPU, measure the speed, then ask coding agent to optimize the speed. Experiment and repeat. This will save tons of time later. 
 3. **Gain early and quick intuitions** by experimenting with smaller models before committing on the optimum approach.
 4. **Monitor the training run to improve the next run**. This is especially helpful early on. Watch out for signs if performance / loss curve is plateauing, or if there are signs of overfitting / underfitting. It gives me opportunities to adjust hyper parameters or add more training data, before committing to more training time.
 
@@ -98,8 +101,10 @@ Development of software applications, even cutting edge AI/ML models, have never
 - Silver et al. (2018). Blog. "AlphaZero: Shedding new light on chess, shogi, and Go".  https://deepmind.google/blog/alphazero-shedding-new-light-on-chess-shogi-and-go/
 - Silver et al. (2018). Research Paper.  "Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm". https://arxiv.org/abs/1712.01815
 - Klein, Dominik. (2023). Book. "Neural Network for Chess". https://github.com/asdfjkl/neural_network_chess
+
 **Projects**
 - [Leela Chess Zero (Lc0)](https://github.com/LeelaChessZero/lc0) — open-source AlphaZero for chess; architecture reference
+
 **Data**
 - [Lichess Elite Database](https://database.nikonoel.fr/) by Nikonoel — 2200+/2400+ rated games, free to download
 - [UHO_4060_v4 opening book](https://github.com/official-stockfish/books) — balanced opening positions for engine testing
