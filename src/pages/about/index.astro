@@ -1,11 +1,44 @@
 ---
 import PageLayout from '@/layouts/CommonPage.astro'
 
-const headings: { depth: number; slug: string; text: string }[] = []
+const headings = [
+  { depth: 2, slug: 'about-me', text: 'About Me' },
+  { depth: 2, slug: 'background-education', text: 'Background & Education' },
+  { depth: 2, slug: 'fun-facts-hobbies', text: 'Fun Facts & Hobbies' }
+]
 ---
 
 <PageLayout title='About' {headings}>
-  <p>
-    Hi, I am a Product Manager specializing in Industrial IoT, AI/ML, and Predictive Maintenance.
-  </p>
+  <div class="space-y-6">
+    <section id="about-me">
+      <h2 class="text-xl font-medium sm:text-2xl mb-4">About Me</h2>
+      <p>
+        Hi, I'm Eugene. I am a <strong>Product Manager by profession, an Engineer by training, and a Mystic at heart</strong>. 
+      </p>
+      <p class="mt-4">
+        My primary interest is in applying the best practices in product management, systems thinking, and IoT/AI/ML engineering to increase reliability and resilience in the industrial, manufacturing, and energy sectors—the vital infrastructure that keeps our societies running.
+      </p>
+    </section>
+
+    <section id="background-education">
+      <h2 class="text-xl font-medium sm:text-2xl mb-4 mt-8">Background & Education</h2>
+      <p>
+        I was born in the mountains of China, and throughout my life, I've had the privilege of living in Scotland, Canada, Taiwan, Singapore, and Norway at various times. Currently, I am based out of <strong>Toronto, Canada</strong>.
+      </p>
+      <p class="mt-4">
+        Academically, I hold a <strong>Bachelor of Mechatronics Engineering</strong> from the University of Waterloo, and a <strong>Master of Design in Strategic Foresight and Innovation</strong> from OCAD University.
+      </p>
+    </section>
+
+    <section id="fun-facts-hobbies">
+      <h2 class="text-xl font-medium sm:text-2xl mb-4 mt-8">Fun Facts & Hobbies</h2>
+      <ul class="list-disc list-inside space-y-2 mt-4">
+        <li>I took flying lessons and learned how to recover airplanes out of spins and stalls.</li>
+        <li>I walked the Camino de Santiago, an 800 km pilgrimage across Spain.</li>
+      </ul>
+      <p class="mt-4">
+        In my free time, you can find me enjoying my hobbies: <strong>reading, meditation, neigong, and playing pickleball</strong>.
+      </p>
+    </section>
+  </div>
 </PageLayout>
