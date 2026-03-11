@@ -1,4 +1,6 @@
 ---
+import { Font } from 'astro:assets'
+
 import { prod } from 'astro-pure/server'
 import type { SiteMeta } from 'astro-pure/types'
 import config from 'virtual:config'
@@ -25,9 +27,16 @@ const socialImageURL = new URL(ogImage ? ogImage : config.socialCard, Astro.url)
 <link rel='apple-touch-icon' sizes='180x180' href='/favicon/apple-touch-icon.png' />
 <link rel='manifest' href='/favicon/site.webmanifest' />
 
+{/* Font preloads */}
+<Font
+  cssVariable='--font-ibm-plex-sans'
+  preload={[{ subset: 'latin', style: 'normal', weight: '400' }]}
+/>
+<Font cssVariable='--font-satoshi' preload={[{ subset: 'latin', style: 'normal', weight: '400' }]} />
 <style>
   body {
-    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-family: var(--font-ibm-plex-sans), var(--font-satoshi), ui-sans-serif, system-ui,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
   }
 </style>
 

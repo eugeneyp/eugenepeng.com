@@ -108,6 +108,24 @@ export default defineConfig({
     contentIntellisense: true,
     // Enable SVGO optimization for SVG assets
     // https://docs.astro.build/en/reference/experimental-flags/svg-optimization/
-    svgo: true
+    svgo: true,
+    // Enable font preloading and optimization
+    // https://docs.astro.build/en/reference/experimental-flags/fonts/
+    fonts: [
+      {
+        provider: fontProviders.google(),
+        name: 'IBM Plex Sans',
+        cssVariable: '--font-ibm-plex-sans',
+        weights: [400, 500, 600, 700],
+        styles: ['normal', 'italic']
+      },
+      {
+        provider: fontProviders.fontshare(),
+        name: 'Satoshi',
+        cssVariable: '--font-satoshi',
+        weights: [400, 500, 600, 700],
+        styles: ['normal', 'italic']
+      }
+    ]
   }
 })
