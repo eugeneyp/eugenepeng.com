@@ -8,7 +8,7 @@ export const prod = import.meta.env.PROD
 export async function getBlogCollection(contentType: CollectionKey = 'blog') {
   return await getCollection(contentType, ({ data }: CollectionEntry<typeof contentType>) => {
     // Not in production & draft is not false
-    return prod ? !data.draft : true
+    return prod ? ('draft' in data ? (data as any).draft !== true : true) : true
   })
 }
 
@@ -47,7 +47,7 @@ export function sortMDByDate(collections: Collections): Collections {
 
 /** Note: This function doesn't filter draft posts, pass it the result of getAllPosts above to do so. */
 export function getAllTags(collections: Collections) {
-  return collections.flatMap((collection) => [...collection.data.tags])
+  return collections.flatMap((collection) => 'tags' in collection.data ? [...(collection.data as any).tags] : [])
 }
 
 /** Note: This function doesn't filter draft posts, pass it the result of getAllPosts above to do so. */

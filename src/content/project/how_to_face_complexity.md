@@ -1,5 +1,5 @@
 ---
-title: "How to Face Complexity: Perspectives from Adult Development Psychology and Evolution of Worldviews [Essay]"
+title: "How to Face Complexity: Adult Development and Worldviews"
 description: "An essay reviewing literature to answer why some people can grasp complexity better than others."
 publishDate: "2020-01-01"
 ---

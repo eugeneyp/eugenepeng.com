@@ -3,7 +3,7 @@ title: 'Building an AlphaZero Chess AI that reaches 2000 ELO'
 description: 'How I built an AlphaZero-style Chess engine that reached 2000 ELO with less than $30'
 publishDate: '2026-03-10'
 heroImage:
-  src: '../../assets/blog/chess-alphazero-hero.png'
+  src: '../../assets/blog/chess-alphazero-hero.webp'
   alt: 'AlphaZero Chess Neural Network Banner'
 tags: ['AI', 'Chess', 'Machine Learning']
 ---
