@@ -58,7 +58,9 @@ export default function AstroPureIntegration(opts: UserInputConfig): AstroIntegr
         rehypePlugins.push([
           rehypeExternalLinks,
           {
-            content: { type: 'text', value: userConfig.content.externalLinks.content },
+            content: userConfig.content.externalLinks.content
+              ? { type: 'text', value: userConfig.content.externalLinks.content }
+              : undefined,
             contentProperties: userConfig.content.externalLinks.properties
           }
         ])
