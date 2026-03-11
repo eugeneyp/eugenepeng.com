@@ -70,7 +70,7 @@ export const theme: ThemeUserConfig = {
   content: {
     /** External links configuration */
     externalLinks: {
-      content: ' ↗',
+      content: '',
       /** Properties for the external links element */
       properties: {
         style: 'user-select:none'

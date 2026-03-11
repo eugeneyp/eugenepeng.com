@@ -1,9 +1,24 @@
 ---
+import { getCollection } from 'astro:content'
 import PageLayout from '@/layouts/CommonPage.astro'
+import ProjectCard from '@/components/home/ProjectCard.astro'
+
+const projects = await getCollection('project')
+
+// Sort by publish date (newest first)
+projects.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 
 const headings: { depth: number; slug: string; text: string }[] = []
 ---
 
 <PageLayout title='Projects' {headings} view>
-  {/* Content intentionally left blank */}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+    {projects.map((project) => (
+      <ProjectCard
+        heading={project.data.title}
+        subheading={project.data.description}
+        href={`/projects/${project.id}`}
+      />
+    ))}
+  </div>
 </PageLayout>
