@@ -21,7 +21,8 @@ export const theme: ThemeUserConfig = {
     dateOptions: {
       day: 'numeric',
       month: 'short',
-      year: 'numeric'
+      year: 'numeric',
+      timeZone: 'UTC'
     }
   },
   /** Set a logo image to show in the homepage. */
