@@ -1,7 +1,7 @@
 ---
-title: "The Future of Democracy [A Strategic Foresight Report]"
-description: "An award-winning Strategic Foresight project for DemocracyXChange to boost democracy and civic engagement in Canada."
-publishDate: "2020-01-01"
+title: 'The Future of Democracy [A Strategic Foresight Report]'
+description: 'An award-winning Strategic Foresight project for DemocracyXChange to boost democracy and civic engagement in Canada.'
+publishDate: '2020-01-01'
 ---
 
 ## Summary
@@ -21,6 +21,7 @@ I was in a team of five graduate students. Professors Suzanne Stein, Zan Chandle
 DemocracyXChange was invited as a client for our classes in Foresight Studios and Strategy Design. They wish to expand on their mission to improve democracy and civic engagement in Canada. The students in the class analyzed a variety of trends that can have an impact on the future of democracy in Canada. Then the students were grouped into different teams, each of which was assigned a theme for further strategic foresight analysis. My team was assigned the theme Civic Engagement.
 
 We identified two critical uncertainties, the drivers that would have the most impact on civic engagement in the future:
+
 1. Trust in Government
 2. Social Cohesion or Fragmentation
 

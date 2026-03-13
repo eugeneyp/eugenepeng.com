@@ -1,8 +1,8 @@
 ---
-title: "Connect4 AlphaZero"
+title: 'Connect4 AlphaZero'
 description: "Connect 4 AI using AlphaZero's reinforcement learning approach."
-publishDate: "2023-10-15"
-githubUrl: "https://github.com/eugeneyp/connect4-alphazero"
+publishDate: '2023-10-15'
+githubUrl: 'https://github.com/eugeneyp/connect4-alphazero'
 ---
 
 ## Overview

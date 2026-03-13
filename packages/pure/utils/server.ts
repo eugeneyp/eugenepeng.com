@@ -1,4 +1,4 @@
-import { type CollectionEntry, type CollectionKey, getCollection } from 'astro:content'
+import { getCollection, type CollectionEntry, type CollectionKey } from 'astro:content'
 
 type Collections = CollectionEntry<CollectionKey>[]
 
@@ -47,7 +47,9 @@ export function sortMDByDate(collections: Collections): Collections {
 
 /** Note: This function doesn't filter draft posts, pass it the result of getAllPosts above to do so. */
 export function getAllTags(collections: Collections) {
-  return collections.flatMap((collection) => 'tags' in collection.data ? [...(collection.data as any).tags] : [])
+  return collections.flatMap((collection) =>
+    'tags' in collection.data ? [...(collection.data as any).tags] : []
+  )
 }
 
 /** Note: This function doesn't filter draft posts, pass it the result of getAllPosts above to do so. */

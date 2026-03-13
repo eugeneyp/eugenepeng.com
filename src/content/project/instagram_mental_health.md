@@ -1,7 +1,7 @@
 ---
-title: "Instagram and Mental Health [Systems Synthesis Map]"
+title: 'Instagram and Mental Health [Systems Synthesis Map]'
 description: "A systems thinking project mapping the systemic inter-relationships and causal feedback loops that drive Instagram's unhealthy effect on self-esteem."
-publishDate: "2020-01-01"
+publishDate: '2020-01-01'
 ---
 
 ## Summary

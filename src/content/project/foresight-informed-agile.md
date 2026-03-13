@@ -1,7 +1,7 @@
 ---
-title: "Foresight-informed Agile for Resilient Product Strategy"
-description: "A major research project studying the relationship between Agile software development and strategic resilience."
-publishDate: "2021-01-01"
+title: 'Foresight-informed Agile for Resilient Product Strategy'
+description: 'A major research project studying the relationship between Agile software development and strategic resilience.'
+publishDate: '2021-01-01'
 ---
 
 ## Summary

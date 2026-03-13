@@ -10,13 +10,7 @@ type Props<Tag extends HTMLTag> = Polymorphic<{ as: Tag }> & {
   class?: string
 }
 
-const {
-  as: Tag = 'a',
-  class: className,
-  href,
-  heading,
-  subheading
-} = Astro.props
+const { as: Tag = 'a', class: className, href, heading, subheading } = Astro.props
 ---
 
 <Tag

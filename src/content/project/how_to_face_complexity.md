@@ -1,7 +1,7 @@
 ---
-title: "How to Face Complexity: Adult Development and Worldviews"
-description: "An essay reviewing literature to answer why some people can grasp complexity better than others."
-publishDate: "2020-01-01"
+title: 'How to Face Complexity: Adult Development and Worldviews'
+description: 'An essay reviewing literature to answer why some people can grasp complexity better than others.'
+publishDate: '2020-01-01'
 ---
 
 ## Summary

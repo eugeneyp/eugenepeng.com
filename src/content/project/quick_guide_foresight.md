@@ -1,7 +1,7 @@
 ---
-title: "Quick Guide to Foresight"
-description: "A presentation introducing Strategic Foresight to a company."
-publishDate: "2021-01-01"
+title: 'Quick Guide to Foresight'
+description: 'A presentation introducing Strategic Foresight to a company.'
+publishDate: '2021-01-01'
 ---
 
 ## Summary

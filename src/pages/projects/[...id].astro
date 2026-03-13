@@ -1,6 +1,7 @@
 ---
-import { render, getCollection } from 'astro:content'
+import { getCollection, render } from 'astro:content'
 import type { CollectionEntry } from 'astro:content'
+
 import { TOC } from 'astro-pure/components/pages'
 import { Icon } from 'astro-pure/user'
 import PageLayout from '@/layouts/ContentLayout.astro'
@@ -22,13 +23,7 @@ type Props = {
 const { project } = Astro.props
 const { Content, headings } = await render(project)
 
-const {
-  description,
-  publishDate,
-  title,
-  updatedDate,
-  githubUrl
-} = project.data
+const { description, publishDate, title, updatedDate, githubUrl } = project.data
 
 const articleDate = updatedDate?.toISOString() ?? publishDate.toISOString()
 ---
@@ -40,24 +35,28 @@ const articleDate = updatedDate?.toISOString() ?? publishDate.toISOString()
     <h1 class='text-2xl font-medium sm:mb-2 sm:text-3xl'>{title}</h1>
     <p class='mt-4 flex flex-wrap gap-x-4 gap-y-2 text-xs leading-6 text-muted-foreground'>
       <time datetime={publishDate.toISOString()}>
-        {new Date(publishDate).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-          timeZone: 'UTC'
-        })}
+        {
+          new Date(publishDate).toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            timeZone: 'UTC'
+          })
+        }
       </time>
     </p>
-    {githubUrl && (
-      <a
-        href={githubUrl}
-        target='_blank'
-        class='mt-4 inline-flex items-center gap-1 text-sm text-muted-foreground underline hover:text-foreground'
-      >
-        <Icon name='github' class='size-4' />
-        View on GitHub
-      </a>
-    )}
+    {
+      githubUrl && (
+        <a
+          href={githubUrl}
+          target='_blank'
+          class='mt-4 inline-flex items-center gap-1 text-sm text-muted-foreground underline hover:text-foreground'
+        >
+          <Icon name='github' class='size-4' />
+          View on GitHub
+        </a>
+      )
+    }
   </div>
 
   <Content />

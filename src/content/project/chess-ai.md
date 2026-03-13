@@ -1,8 +1,8 @@
 ---
-title: "Chess AI (Classical Search)"
-description: "Chess AI driven by alpha-beta search that reached 1600 ELO."
-publishDate: "2023-05-10"
-githubUrl: "https://github.com/eugeneyp/chess-ai"
+title: 'Chess AI (Classical Search)'
+description: 'Chess AI driven by alpha-beta search that reached 1600 ELO.'
+publishDate: '2023-05-10'
+githubUrl: 'https://github.com/eugeneyp/chess-ai'
 ---
 
 ## Overview
@@ -13,4 +13,3 @@ Playing strength: ~1580–1640 ELO (measured vs Stockfish with UCI_LimitStrength
 
 - Play it live: https://chess-ai-eu2i.onrender.com
 - GitHub: https://github.com/eugeneyp/chess-ai
-

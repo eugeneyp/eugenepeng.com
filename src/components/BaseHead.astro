@@ -1,9 +1,9 @@
 ---
 import { Font } from 'astro:assets'
+import config from 'virtual:config'
 
 import { prod } from 'astro-pure/server'
 import type { SiteMeta } from 'astro-pure/types'
-import config from 'virtual:config'
 
 type Props = SiteMeta
 
@@ -15,23 +15,30 @@ const socialImageURL = new URL(ogImage ? ogImage : config.socialCard, Astro.url)
 ---
 
 <meta charset='utf-8' />
-<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover' name='viewport' />
+<meta
+  content='width=device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover'
+  name='viewport'
+/>
 <meta content='IE=edge' http-equiv='X-UA-Compatible' />
 <title>{siteTitle}</title>
 
 {/* Icons / Favicon */}
-<link rel="icon" href="data:," />
+<link rel='icon' href='data:,' />
 
 {/* Font preloads */}
 <Font
   cssVariable='--font-ibm-plex-sans'
   preload={[{ subset: 'latin', style: 'normal', weight: '400' }]}
 />
-<Font cssVariable='--font-satoshi' preload={[{ subset: 'latin', style: 'normal', weight: '400' }]} />
+<Font
+  cssVariable='--font-satoshi'
+  preload={[{ subset: 'latin', style: 'normal', weight: '400' }]}
+/>
 <style>
   body {
-    font-family: var(--font-ibm-plex-sans), var(--font-satoshi), ui-sans-serif, system-ui,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
+    font-family:
+      var(--font-ibm-plex-sans), var(--font-satoshi), ui-sans-serif, system-ui, 'Apple Color Emoji',
+      'Segoe UI Emoji', 'Noto Color Emoji', sans-serif;
   }
 </style>
 

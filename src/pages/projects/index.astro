@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content'
+
 import PageLayout from '@/layouts/CommonPage.astro'
 import ProjectCard from '@/components/home/ProjectCard.astro'
 
@@ -27,30 +28,34 @@ const headings = [
 ---
 
 <PageLayout title='Projects' {headings} view>
-  <div class="space-y-12 mt-8">
-    <section id="ai-ml">
-      <h2 class="text-xl font-medium sm:text-2xl mb-4">AI / ML</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {aiProjects.map((project) => (
-          <ProjectCard
-            heading={project.data.title}
-            subheading={project.data.description}
-            href={`/projects/${project.id}`}
-          />
-        ))}
+  <div class='space-y-12 mt-8'>
+    <section id='ai-ml'>
+      <h2 class='text-xl font-medium sm:text-2xl mb-4'>AI / ML</h2>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+        {
+          aiProjects.map((project) => (
+            <ProjectCard
+              heading={project.data.title}
+              subheading={project.data.description}
+              href={`/projects/${project.id}`}
+            />
+          ))
+        }
       </div>
     </section>
 
-    <section id="strategic-foresight-innovation">
-      <h2 class="text-xl font-medium sm:text-2xl mb-4">Strategic Foresight & Innovation</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {foresightProjects.map((project) => (
-          <ProjectCard
-            heading={project.data.title}
-            subheading={project.data.description}
-            href={`/projects/${project.id}`}
-          />
-        ))}
+    <section id='strategic-foresight-innovation'>
+      <h2 class='text-xl font-medium sm:text-2xl mb-4'>Strategic Foresight & Innovation</h2>
+      <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+        {
+          foresightProjects.map((project) => (
+            <ProjectCard
+              heading={project.data.title}
+              subheading={project.data.description}
+              href={`/projects/${project.id}`}
+            />
+          ))
+        }
       </div>
     </section>
   </div>
